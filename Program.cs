@@ -36,7 +36,7 @@
 
 // int x = 2;
 // int y = 3;
- 
+
 
 // РЕШЕНИЕ:
 
@@ -59,5 +59,31 @@
 //             Console.WriteLine("4");
 //         }
 // }
+
+
+// Напишите программу, которая принимает на вход целое число из отрезка [10, 99] 
+// и показывает наибольшую цифру числа.
+
+// пример:
+// 40 => 4
+// 96 => 9
+// 72 => 7
+
+// // РЕШЕНИЕ
+
+// int c = 72; // ввод числа в переменную с
+
+// int a = 10;
+// int b = 99;
+// int numFirst = c / 10;
+// int numSecond = c % 10;
+
+// if (c <= b && c >= a)
+// if (numFirst == numSecond)
+// { Console.WriteLine(numFirst + " = " + numSecond);}
+// if (numFirst > numSecond)
+// {    Console.WriteLine(numFirst);}
+// if (numFirst < numSecond)
+// {Console.WriteLine(numFirst);}
 
 
