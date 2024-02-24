@@ -87,3 +87,30 @@
 // {Console.WriteLine(numFirst);}
 
 
+// 4 ЗДАЧА
+// Напишите программу, которая на вход принимает натуральное 
+// число N, а на выходе показывает его цифры через запятую.
+
+//пример:
+//  568 => 5,6,8
+// 8 => 8
+// 9542 => 9,5,4,2
+
+// РЕШЕНИЕ:
+
+int n = 9542;
+int divisor = 1;
+
+while (divisor * 10 <= n){
+     divisor = divisor * 10;}
+
+while (divisor > 0){
+int digit = n / divisor;
+ Console.Write(digit);
+
+if (divisor > 1) {
+Console.Write(", ");
+            }
+ {n %= divisor;
+ divisor /= 10;}
+}
